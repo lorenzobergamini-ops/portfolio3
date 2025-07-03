@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Bergamini Lorenzo</title>
+  <link rel="icon" type="image/png" href="3ee2b6d2-7ea5-4450-b080-88432af40f19.png">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body id="inizio" class="light-theme">
+
+  <div id="cookie-banner" class="cookie-banner hidden">
+    <p>Questo sito utilizza cookie per migliorare l'esperienza dell'utente. <a href="COOKIES.html" target="_blank">Scopri di più</a>.</p>
+    <button id="accept-cookies">Ok</button>
+  </div>
+
+  <header role="banner">
+    <div class="container nav-container"> 
+      <div class="profile-header">
+        <img src="miaafoto.jpg" alt="Profilo" class="profile-icon" />
+        <h1 class="logo">Lorenzo Bergamini</h1>
+      </div>
+      <div class="controls">
+        <button id="menu-toggle" class="hamburger" aria-label="Apri impostazioni" aria-controls="control-panel" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <aside id="control-panel" class="panel hidden" aria-hidden="true">
+    <h3 data-translate="impostazioni">Impostazioni</h3>
+    <div>
+      <label for="theme-toggle" data-translate="tema">Tema:</label>
+      <button id="theme-toggle" data-translate-theme>Chiaro</button>
+    </div>
+    <div>
+      <label for="language-select" data-translate="lingua">Lingua:</label>
+      <select id="language-select" aria-label="Seleziona lingua">
+        <option value="it">Italiano</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </aside>
+
+  <nav role="navigation" aria-label="Menu principale">
+    <ul class="nav-menu">
+      <li><a href="#chi-sono" data-translate="chi-sono">Chi sono</a></li>
+      <li><a href="#skills" data-translate="skills">Skills</a></li>
+      <li><a href="#progetti" data-translate="progetti">Progetti</a></li>
+      <li><a href="#contatti" data-translate="contatti">Contatti</a></li>
+      <li><a href="#feedbackkk" >Feedback</a></li>
+    </ul>
+  </nav>
+
+  <section id="chi-sono" class="section container">
+    <div class="about">
+      <div class="about-text">
+        <h2 data-translate="chi-sono">Chi sono</h2>
+        <p data-translate="descrizione">
+          Mi chiamo Lorenzo Bergamini, ho 18 anni e una delle passioni che da sempre mi accompagna è l’informatica. 
+          Questo interesse è nato in modo del tutto spontaneo e naturale durante l'infanzia. Ricordo ancora con entusiasmo il momento in cui, terminata la scuola elementare, i miei genitori mi regalarono il mio primo telefono. 
+          Quell’oggetto, apparentemente semplice, suscitò in me un profondo senso di meraviglia e una forte curiosità: mi chiedevo come fosse possibile costruire uno strumento così sofisticato, capace di svolgere così tante funzioni in modo così rapido ed efficiente.
+          Fu proprio da quel momento che iniziai ad avvicinarmi al mondo della tecnologia. Cominciai a documentarmi, leggendo articoli, guardando video, esplorando forum e ponendomi sempre nuove domande. 
+          Volevo comprendere cosa si nascondesse dietro lo schermo, come funzionassero i software, quali linguaggi permettessero a un programma di “parlare” con un dispositivo e come venissero progettati i sistemi che oggi fanno parte della nostra quotidianità.
+          Con il tempo, questa semplice curiosità si è trasformata in una vera e propria passione. Quando giunse il momento di scegliere il percorso di studi alle scuole superiori, non ebbi dubbi: decisi di iscrivermi a un istituto tecnico con indirizzo informatico. 
+          Questa scelta ha rappresentato per me il primo passo concreto verso un futuro nel settore tecnologico, permettendomi di acquisire le basi teoriche e pratiche su cui intendo costruire la mia carriera.
+          Oggi, guardandomi indietro, posso dire con certezza che quella decisione ha segnato l’inizio di un percorso che sento profondamente mio.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="miaafoto.jpg" alt="Foto di Lorenzo Bergamini" />
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML & CSS</h3>
+        <p><strong>ITA:</strong> Solida padronanza di HTML e CSS. Creo pagine accessibili e responsive usando Flexbox, Grid e media query.</p>
+        <p><strong>ENG:</strong> Solid knowledge of HTML and CSS. I build accessible and responsive web pages using Flexbox, Grid, and media queries.</p>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p><strong>ITA:</strong> Manipolazione del DOM, eventi, fetch API e async/await. Sto studiando React.</p>
+        <p><strong>ENG:</strong> DOM manipulation, events, fetch API, and async/await. Currently learning React.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python 3</h3>
+        <p><strong>ITA:</strong> Utilizzo Python per script, automazioni e gestione API. Esperienza con librerie come requests e paho-mqtt.</p>
+        <p><strong>ENG:</strong> I use Python for scripting, automation, and API handling. Experience with libraries like requests and paho-mqtt.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Java</h3>
+        <p><strong>ITA:</strong> Progetti OOP e GUI con Swing. Familiarità con array, liste, eccezioni, ereditarietà e metodi statici.</p>
+        <p><strong>ENG:</strong> OOP projects and Swing GUI. Comfortable with arrays, lists, exceptions, inheritance, and static methods.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="progetti" class="section container">
+    <h2 data-translate="progetti">I miei progetti</h2>
+    <div class="project-card">
+      <h3 data-translate="portfolio">Portfolio Personale</h3>
+      <p data-translate="descrizione-progetto">Cliccando il seguente link vi manderà sulla mia pagina personale di github dove potrete visionare i miei lavori svolti</p>
+      <a data-translate="guarda" href="https://github.com/lorenzobergamini-ops" target="_blank">Guarda su GitHub</a>
+    </div> 
+  </section>
+
+  <section id="contatti" class="section container">
+    <h2 data-translate="contatti">Contatti</h2>
+    <p data-translate="social">Mi trovi anche su:</p>
+    <ul class="social-links">
+      <li>
+        <a href="https://github.com/lorenzobergamini-ops" target="_blank">
+          <img src="github.png" alt="GitHub" class="icon" />
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/lorenzo.bergamini" target="_blank">
+          <img src="instagram.png" alt="Instagram" class="icon" />
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRmTpKDCMwXHBTqgvWhgjFsRGZPHZSsGpVTVmCGtttXbZnrvCGWdRFlFLSZhPTwwJCGdgWv" target="_blank">
+          <img src="email.png" alt="Email" class="icon" />
+          Gmail
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="feedbackkk" class="feedback-box section container">
+    <h3 data-translate="feedback">Mandami un feedback!</h3>
+    <form id="feedback-form">
+      <label data-translate="email" for="email">La tua email (facoltativa):</label>
+      <input type="email" id="email" name="email" placeholder="nome@example.com" required/>
+
+      <label data-translate="messaggio" for="message">Il tuo messaggio:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Scrivi qui il tuo feedback..." required></textarea>
+
+      <label data-translate="valutazione" for="rating">Valutazione:</label>
+      <div class="star-rating" id="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+
+      <input type="hidden" name="stars" id="star-value" value="0" />
+
+      <button data-translate="invia" type="submit">Invia feedback</button>
+    </form>
+    <p id="feedback-response" style="margin-top: 1rem;"></p>
+  </section>
+
+  <section class="section container">
+    <h3 data-translate="informazioni"><em>Informazioni</em></h3>
+    <a href="COOKIES.html" target="_blank">Informativa sui cookies</a>
+    <em data-translate="versione"><p>
+      Questo sito è stato creato da Lorenzo Bergamini come portfolio personale.
+      Versione: 1.0.0
+      Ultimo aggiornamento: Luglio 2025
+      Questo sito non è ufficiale: è stato realizzato esclusivamente per uso personale e a scopo didattico.
+    </p>
+    </em>
+
+    <footer>
+    &copy; 2025 Lorenzo Bergamini. Tutti i diritti riservati.
+  </footer>
+  </section>
+
+  <a href="#inizio" class="button" data-translate="torna">Torna all'inizio</a>
+
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+  
+
+</body>
+</html>

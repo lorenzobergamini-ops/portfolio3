@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify
+}
+
+header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.logo {
+  font-size: 1.8em;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav-menu li a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ffeb3b;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+.dark-theme h2 {
+  color: #90caf9;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-img img {
+  width: 230px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: #e3f2fd;
+  padding: 12px;
+  border-left: 5px solid #0d47a1;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.dark-theme .skills-list li {
+  background-color: #1e1e1e;
+  border-left-color: #222a31;
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #0d47a1; 
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dark-theme .project-card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-left-color: #90caf9;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0d47a1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d47a1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: #1565c0;
+}
+
+.panel {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 2000;
+  min-width: 200px;
+}
+
+.dark-theme .panel {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-img img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #e3f2fd;
+  border-left: 5px solid #0d47a1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  color: #0d47a1;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.skill-card:hover {
+  transform: scale(1.02);
+}
+
+.feedback-box {
+      margin: 2rem auto;
+      max-width: 600px;
+      padding: 1.5rem;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+.feedback-box h3 {
+      margin-top: 0;
+    }
+
+.feedback-box label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+.star-rating {
+      display: flex;
+      gap: 5px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+.star {
+      color: #ccc;
+      transition: color 0.3s;
+    }
+
+.star.active {
+      color: gold;
+    }
+
+.feedback-box input,
+.feedback-box textarea,
+.feedback-box button {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+.feedback-box button {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+.feedback-box button:hover {
+      background-color: #0056b3;
+    }
+.feedback-box .success-message {
+      color: green;
+      margin-top: 1rem;
+      display: none;
+    }
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+.cookie-banner a {
+  color: #00aaff;
+  text-decoration: underline;
+}
+.cookie-banner button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.cookie-banner.hidden {
+  display: none;
+}
