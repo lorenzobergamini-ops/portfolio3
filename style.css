@@ -22,6 +22,7 @@ body {
   color: #333;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
+  text-align: center;
 }
 
 body.dark-theme {
@@ -33,7 +34,7 @@ body.dark-theme {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
-  text-align: justify
+  text-align: justify;
 
 }
 
@@ -85,8 +86,7 @@ body.dark-theme {
 
 .section {
   padding: 60px 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  
 }
 
 h2 {
