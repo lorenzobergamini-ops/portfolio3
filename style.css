@@ -22,8 +22,8 @@ body {
   color: #333;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 body.dark-theme {
