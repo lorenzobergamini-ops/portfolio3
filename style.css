@@ -4,12 +4,26 @@
   box-sizing: border-box;
 }
 
+header {
+  background: linear-gradient(90deg, #0044ff, #ffffff);
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-left: none;
+  margin-left: none;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 body.dark-theme {
@@ -22,17 +36,10 @@ body.dark-theme {
   margin: 0 auto;
   padding: 20px;
   text-align: justify
+
 }
 
-header {
-  background-color: #0d47a1;
-  color: white;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+
 
 .nav-container {
   display: flex;
@@ -98,6 +105,8 @@ h2 {
   gap: 30px;
   align-items: center;
   justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .about-text {
@@ -161,6 +170,7 @@ h2 {
 .social-links {
   list-style: none;
   margin-top: 10px;
+  margin-left: 20px;
 }
 
 .social-links li {
@@ -180,7 +190,7 @@ h2 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #0d47a1;
+  background: linear-gradient(90deg,#ffffff, #0044ff);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -210,11 +220,15 @@ h2 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 2000;
   min-width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .dark-theme .panel {
   background-color: #1e1e1e;
   color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .hidden {
